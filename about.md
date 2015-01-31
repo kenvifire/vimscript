@@ -10,7 +10,7 @@
 
 这本书一直都可以在这里被在线免费阅读。
 
-你可以再Leanpub上花$8买一本电子书（PDF，epub，mobi）
+你可以花$8在Leanpub上买一本电子书（PDF，epub，mobi）
 
 你可以花$20在Lulu上买一本简装本。
 
