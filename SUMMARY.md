@@ -4,7 +4,6 @@
 * [ i. 前言](preface.md)
 * [ii. 鸣谢](acknowledgements.md)
 * [ 0. 准备工作](01.md)
-* [ . 创建Vimrc文件](01.md)
 * [ 1. 输出消息](02.md)
 * [ 2. 设置项](03.md)
 * [ 3. 基础映射](03.md)
