@@ -8,7 +8,7 @@ before_install:
 script:
 - pandoc  -s -t epub -o vimscript.epub  -f marsudo kdown content/*.md -M title='VimScript
   编程指南'
-- pandoc  -s -t html5 -o vimscript.pdf  -f markdown content/*.md -M title='VimScript 编程指南'
+#- pandoc  -s -t html5 -o vimscript.pdf  -f markdown content/*.md -M title='VimScript 编程指南'
 deploy:
   provider: releases
   api_key:
