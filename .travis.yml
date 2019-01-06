@@ -1,10 +1,11 @@
 language: bash
 before_install:
+  - sudo apt-get install texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra
   - sudo apt-get install wkhtmltopdf pandoc
 script:
 - pandoc  -s -t epub -o vimscript.epub  -f markdown content/*.md -M title='VimScript
   编程指南'
-- pandoc  -s -t html5 -o vimscript.pdf  -f markdown *.md -M title='VimScript 编程指南'
+- pandoc  -s -t html5 -o vimscript.pdf  -f markdown content/*.md -M title='VimScript 编程指南'
 deploy:
   provider: releases
   api_key:
