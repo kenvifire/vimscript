@@ -1,17 +1,17 @@
 language: base
 addons:
-	apt:
-	- pandoc
+  apt:
+    - pandoc
     - wkhtmltopdf
 script:
-	- pandoc  -s -t epub -o vimscript.epub  -f markdown content/*.md -M title='VimScript 编程指南'
-    - pandoc  -s -t html5 -o vimscript.pdf  -f markdown *.md -M title='VimScript 编程指南' 
+  - pandoc  -s -t epub -o vimscript.epub  -f markdown content/*.md -M title='VimScript 编程指南'
+  - pandoc  -s -t html5 -o vimscript.pdf  -f markdown *.md -M title='VimScript 编程指南' 
 
 deploy:
-	provider: release
-	api_key: 'GITHUB OAUTH TOKEN'
-    file: 
-		- vimscript.epub
-        - vimscript.pdf
-    skip_cleanup:true
-    draft: true
+  provider: release
+  api_key: 'GITHUB OAUTH TOKEN'
+  file: 
+    - vimscript.epub
+    - vimscript.pdf
+  skip_cleanup:true
+  draft: true
