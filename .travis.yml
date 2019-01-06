@@ -1,9 +1,6 @@
 language: bash
-addons:
-  apt:
-    packages:
-    - pandoc
-    - wkhtmltopdf
+before_install:
+  - sudo apt-get install wkhtmltopdf pandoc
 script:
 - pandoc  -s -t epub -o vimscript.epub  -f markdown content/*.md -M title='VimScript
   编程指南'
