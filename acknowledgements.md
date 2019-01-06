@@ -1,4 +1,4 @@
-鸣谢
+# 鸣谢
 
 首先，我要感谢Zed Shaw，他编写了《Learn Python the Hard Way》一书，并且免费提供出来。这本书的格式和书写风格都都是来自它。
 
