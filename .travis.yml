@@ -17,5 +17,5 @@ deploy:
     - vimscript.pdf
   on:
     repo: kenvifire/vimscript
-    branch: master
+    tags: true
 
