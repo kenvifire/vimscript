@@ -2,6 +2,7 @@ language: bash
 before_install:
   - wget -O pandoc.deb https://github.com/jgm/pandoc/releases/download/2.5/pandoc-2.5-1-amd64.deb
   - sudo dpkg -i pandoc.deb
+  - rm -rf pandoc.deb
 #  - wget -O wkhtmltox.deb https://downloads.wkhtmltopdf.org/0.12/0.12.5/wkhtmltox_0.12.5-1.trusty_amd64.deb
 #  - sudo dpkg -i wkhtmltox.deb
 script:
