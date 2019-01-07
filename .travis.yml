@@ -11,6 +11,7 @@ script:
 #- pandoc  -s -t html5 -o vimscript.pdf  -f markdown content/*.md -M title='VimScript 编程指南'
 deploy:
   provider: releases
+  skip_cleanup: true
   api_key:
     secure: FpVNYzx/xcRMoLo8toPsLGK88APDIib8kNQA/Jj845BAH23yWGhFHh3QCaGvqJL+IX7+a+ZcM9qiPWeaiV37OhPC7HMdns7DdC7quMAEBwMGN8r+3oTuNPcjf9IpUpw594o1QXE6vhjSuCao5Zph4M+owDuhyQV7sttXjWfLYTA8Rrshwzz9jkVXBch1MKo5Zk8bg2AvNOgDoYUpQtMrWTCZxP3hiDuW9l6SfLArVuEdhvch/OnQgrmHOb6VntRaWeIOK+9eX8/OzivNfyVMWz0W0vzSsiiUZ+wRXqIpsvGYXGJKuogYx/55RVg4JB18s3+YQlugNbN63+TKOIXOkBncoLf2Y0iDfALp5AEaA2cld2Obp+IEVFGNA7vKFlQk/7YwL++OcOKDrIn5PVSSLdh41koTzXgQJEfmNExG5/OLFRvxikSKnY0K0KdwdrFOYl9lATrh3AADMSnE+qIaTA7BA2eOl5BZgckxAtztP1cA5A4PhWErVX0ccpMgTIpZMJwQzkQ/salmJ5OXP5I9rGa8cgKhl84SWImpm+BbaxoBPygUQkKi49IyJTomJatbGyHlttHnheWdXaeravh1LOj0EMk1hh3desC1AxMqf0EeDa2gJgJs9HuTcTb1Nbm6VFJcbWEnFTAh+VUVzS2rnOckd5GgGJz+ehjIojF++r0=
   file: "vimscript.epub"
